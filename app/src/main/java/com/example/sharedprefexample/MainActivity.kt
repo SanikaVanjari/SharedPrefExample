@@ -6,7 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
