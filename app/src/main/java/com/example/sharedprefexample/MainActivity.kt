@@ -11,6 +11,9 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        if (VersionUtil.hasL()){
+            Toast.makeText(this,"hasL() is true", Toast.LENGTH_LONG).show()
+        }
 
         SharedPrefHelper.setString(this,"HOLA","hello world")
 
